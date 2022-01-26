@@ -46,7 +46,7 @@ character.title = "lady of Winterfell"
 // }
 
 character.greet=function hello(){
-    alert(`iam ${character.name} and my tittle is ${character.title}`)
+    alert(`iam ${character.characterName} and my tittle is ${character.title}`)
 }
 
 
@@ -63,7 +63,7 @@ character.greet();
 
 //  - Change the method `greet` to now alert `She is [NAME HERE] and her title is [TITLE HERE]`.
 
-character.greet=alert(`iam ${character.name} and my tittle is ${character.title}`)
+character.greet=alert(`iam ${character.characterName} and my tittle is ${character.title}`)
 
 
 
@@ -88,16 +88,20 @@ isAdult= age > 18 ? !true : !false;
 
 let keyName = 'playedBy';
 
-
+ character["keyName"] = "maisie williams"
 
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
 
-
+alert(character["keyName"]);
 
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
+
+console.log[character[42]];
 
 
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
 
+character.totalseasons = 1 + 2 + 3 +2;
 
 // - Access the value of the key `totalSeason` (it should be 8)
+console.log(character.totalseasons);
