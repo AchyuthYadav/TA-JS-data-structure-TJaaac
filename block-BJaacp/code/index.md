@@ -13,10 +13,10 @@ Answer the following with reason after going through the above code:
 
 - `[10] === [10]` 
 - What is the value of obj? // answer
-- `obj == newObj` // true
-- `obj === newObj` // true
-- `user === newObj` // true
-- `user == newObj` // true
+- `obj == newObj` // false
+- `obj === newObj` // false
+- `user === newObj` // false
+- `user == newObj` // false
 - `user == obj` // true
 - `arr == arr2`// true
 - `arr === arr2` // true
@@ -46,6 +46,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. output [`Bran`,`John`]
-console.log(user.brothers.length === brothers.length); //2. output [2]
+console.log(user.brothers === brothers); //1. output [`Bran`,`John`,`Robb`] 
+console.log(user.brothers.length === brothers.length); //2. output [3] 
 ```
